@@ -17,4 +17,14 @@ router.put('/vehicles/:id', vehicle_controller.vehicle_update_put);
 router.get('/vehicles/:id', vehicle_controller.vehicle_detail);
 // GET request for list of all vehicle items.
 router.get('/vehicles', vehicle_controller.vehicle_list);
+/* GET detail vehicle page */
+router.get('/detail', vehicle_controller.vehicle_view_one_Page);
+/* GET create vehicle page */
+router.get('/create', vehicle_controller.vehicle_create_Page);
+
+/* GET create update page */
+router.get('/update', vehicle_controller.vehicle_update_Page);
+
+/* GET delete vehicle page */
+router.get('/delete', vehicle_controller.vehicle_delete_Page);
 module.exports = router;

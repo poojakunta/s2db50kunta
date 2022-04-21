@@ -1,0 +1,21 @@
+extends layout
+block content
+   h1= title
+   - let vehicleid = toShow._id
+   - let  name = toShow.name
+   - let type  = toShow.type
+   - let noofpassengers = toShow.noofpassengers
+     div
+       div.row
+         div(class='vehicleAttr mr-3') vehicle ID is:
+         div #{vehicleid}
+       div.row
+         div(class='vehicleAttr mr-3') vehicle Type is:
+         div #{name}
+       div.row
+       
+         div(class='vehicleAttr mr-3') vehicle Size is:
+         div #{type}
+       div.row
+         div(class='vehicleAttr mr-3') vehicle Cost is:
+         div #{noofpassengers}
